@@ -1,155 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cumhur Cay — The Chronology. Kitaplar, fikirler ve projeler."><title>Cumhur Cay — The Chronology</title>
+<style>
+:root{--ink:#252728;--muted:#686d71;--line:#d8dbdd;--paper:#f7f8f8}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #555;outline-offset:5px}.wrap{max-width:1280px;margin:auto;padding:0 6%}.draft{font-size:10px;letter-spacing:.12em;background:#e8ebed;text-align:center;padding:9px;color:#565d61}header{position:sticky;top:0;z-index:5;background:#f7f8f8ed;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.header{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:80px}.brand{font-size:14px;letter-spacing:.12em;font-weight:bold}nav{display:flex;gap:25px;font-size:12px}.language{display:flex;gap:5px;border:1px solid var(--line);border-radius:30px;padding:4px}.language button{border:0;background:transparent;color:#687075;border-radius:20px;padding:7px 10px;font-size:11px}.language button[aria-pressed=true]{background:#252728;color:white}.hero{padding:105px 0 70px;position:relative;overflow:hidden}.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(64px,9vw,125px);font-weight:400;letter-spacing:-.075em;line-height:.94;margin:25px 0 28px}h1 span{color:#9ca3a8}.hero-grid{display:grid;grid-template-columns:1fr 270px;gap:60px;align-items:end}.lead{font-size:17px;line-height:1.7;max-width:500px;color:var(--muted)}.hero-aside{border-top:1px solid var(--line);padding-top:18px}.hero-aside strong{display:block;font-size:20px;font-weight:400;margin:13px 0}.small{font-size:12px;line-height:1.7;color:var(--muted)}.arrow-link{display:inline-block;font-size:12px;border-bottom:1px solid #92999e;padding:8px 0;margin-top:20px}.era-index{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);padding:25px 0 0;margin-top:55px;gap:10px}.era-index a{font-size:12px}.era-index small{display:block;color:#8c9398;font-size:9px;margin-bottom:12px}.section{padding:75px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:45px}h2{font-size:clamp(35px,5vw,58px);font-weight:400;letter-spacing:-.055em;margin:15px 0 0}h3{font-weight:400;letter-spacing:-.04em;font-size:34px;margin:12px 0 16px}.timeline{position:relative}.era{display:grid;grid-template-columns:190px 1fr 200px;gap:40px;position:relative;padding:35px 0 45px 32px;border-bottom:1px solid var(--line)}.era:before{content:'';position:absolute;left:0;top:43px;width:7px;height:7px;border:1px solid #848d93;border-radius:50%;background:var(--paper);z-index:1}.timeline:before{content:'';position:absolute;left:4px;top:43px;bottom:80px;width:1px;background:var(--line)}.era .date{font-size:11px;color:var(--muted);line-height:1.8;padding-top:5px}.era .date b{display:block;font-weight:400;font-size:10px;letter-spacing:.15em;margin-bottom:12px;color:#8b9398}.era p{font-size:14px;color:var(--muted);line-height:1.8;max-width:450px;margin:0}.book-status{padding-top:8px}.pill{font-variant-ligatures:none;display:inline-block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:20px;padding:8px 12px}.book-status strong{font-size:14px;line-height:1.6;display:block;font-weight:400;margin:16px 0 4px}.current{background:linear-gradient(110deg,#edf0f1,transparent);margin-left:-20px;padding-left:52px}.current:before{left:20px;background:#5e696f}.book-feature{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center}.book-art{min-height:360px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 45%,#fff,#e2e6e9);padding:40px}.book{width:220px;height:300px;background:linear-gradient(110deg,#e6e9eb,#fafafa 20%,#eceff0);box-shadow:16px 25px 30px #7773;border-left:6px solid #c2c8cc;padding:30px 24px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-5deg)}.book-title{font-family:Georgia,serif;font-size:33px;line-height:1.05}.book .orbit{width:95px;height:95px;border:1px solid #9ba4ab;border-radius:50%;align-self:center;position:relative}.orbit:after{content:'';position:absolute;border:1px solid #9ba4ab;width:115px;height:65px;border-radius:50%;left:-10px;top:14px;transform:rotate(-32deg)}.book-content p{color:var(--muted);font-size:15px;line-height:1.8;max-width:460px}.book-content h3{font-size:38px}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.loop-symbol{width:160px;height:160px;border:1px solid #aab2b7;border-radius:50%;margin:35px auto;position:relative;box-shadow:0 0 0 25px #e9edee,0 0 0 26px #d1d7db}.loop-symbol:after{content:'';position:absolute;background:#737e85;width:10px;height:10px;top:21px;right:17px;border-radius:50%}.loop-visual{display:flex;align-items:center;justify-content:center;min-height:240px;background:#edf0f1}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.gallery article{border-top:1px solid var(--line);padding-top:22px}.gallery h3{font-size:25px}.gallery p{font-size:13px;color:var(--muted);line-height:1.8}.gallery .number{font-size:10px;color:#8b949a}.about p{font-size:17px;line-height:1.9;color:var(--muted);max-width:620px}.about .identity{font-size:42px;letter-spacing:-.06em;color:var(--ink)}details{border-top:1px solid var(--line);padding:18px 0;font-size:13px}summary{cursor:pointer}details p{font-size:13px!important}footer{border-top:1px solid var(--line);padding:30px 0;margin-top:35px;font-size:11px;color:var(--muted)}.footer{display:flex;justify-content:space-between;gap:25px}.mobile-nav{display:none}@media(max-width:900px){nav{gap:12px}.era{grid-template-columns:145px 1fr;gap:24px}.book-status{grid-column:2}.hero-grid{grid-template-columns:1fr 210px;gap:25px}.book-feature,.split{gap:35px}}@media(max-width:640px){.wrap{padding:0 24px}.header{min-height:70px;gap:10px}nav{display:none}.brand{font-size:11px}.mobile-nav{display:flex;overflow:auto;gap:22px;padding:0 0 15px;font-size:11px;white-space:nowrap}.hero{padding:65px 0 40px}.hero-grid{grid-template-columns:1fr}.hero-aside{margin-top:15px}h1{font-size:clamp(46px,12vw,69px)}.era-index{grid-template-columns:repeat(3,1fr);gap:24px}.section{padding:50px 0}.section-head{display:block}.section-head .small{margin-top:20px}.era{grid-template-columns:1fr;gap:10px;padding-left:25px}.era .date b{display:inline;margin-right:15px}.book-status{grid-column:1;margin-top:10px}.current{padding-left:45px}.book-feature,.split,.gallery{grid-template-columns:1fr}.book-art{min-height:320px;padding:20px}.book-feature>*{min-width:0}.book-content h3{font-size:32px}.book{max-width:100%}.gallery{gap:30px}.footer{flex-direction:column}.lead{font-size:15px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
 
-  <title>Cumhur</title>
-  <meta name="description" content="The official website of Cumhur.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #ffffff;
-      color: #111111;
-      min-height: 100vh;
-    }
-
-    header {
-      width: 100%;
-      padding: 32px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-    }
-
-    nav {
-      display: flex;
-      gap: 28px;
-    }
-
-    nav a {
-      color: #111111;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    main {
-      min-height: calc(100vh - 90px);
-      display: flex;
-      align-items: center;
-      padding: 0 6%;
-    }
-
-    .hero {
-      max-width: 900px;
-    }
-
-    .eyebrow {
-      font-size: 14px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      color: #666666;
-    }
-
-    h1 {
-      font-size: clamp(64px, 12vw, 160px);
-      line-height: 0.9;
-      letter-spacing: -0.06em;
-      font-weight: 700;
-    }
-
-    .intro {
-      margin-top: 32px;
-      font-size: clamp(20px, 2.5vw, 30px);
-      line-height: 1.4;
-      max-width: 700px;
-      color: #444444;
-    }
-
-    .links {
-      display: flex;
-      gap: 28px;
-      margin-top: 44px;
-      flex-wrap: wrap;
-    }
-
-    .links a {
-      color: #111111;
-      text-decoration: none;
-      font-size: 15px;
-      border-bottom: 1px solid #111111;
-      padding-bottom: 4px;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        padding: 24px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      main {
-        padding: 0 24px;
-      }
-
-      h1 {
-        font-size: clamp(64px, 22vw, 100px);
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <div class="logo">IAMCUMHUR</div>
-
-    <nav>
-      <a href="#">Projects</a>
-      <a href="#">Books</a>
-      <a href="#">Journal</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-
-      <div class="eyebrow">
-        Author · Creator · Builder
-      </div>
-
-      <h1>CUMHUR</h1>
-
-      <p class="intro">
-        Ideas, stories and projects about reality,
-        identity and human life.
-      </p>
-
-      <div class="links">
-        <a href="#">Explore Projects</a>
-        <a href="#">Books</a>
-      </div>
-
-    </section>
-  </main>
-
-</body>
-</html>
+<header><div class="wrap header"><a class="brand" href="#home">CUMHUR CAY</a><nav aria-label="Ana menü"><a href="#chronology">The Chronology</a><a href="#books" data-tr="Kitaplar" data-en="Books">Kitaplar</a><a href="#loop">The Loop</a><a href="#exhibition">Exhibition</a><a href="#about">About</a></nav><div class="language" aria-label="Language"><button aria-pressed="true" data-lang="tr">TR</button><button aria-pressed="false" data-lang="en">EN</button></div></div><div class="wrap mobile-nav"><a href="#chronology">Chronology</a><a href="#books" data-tr="Kitaplar" data-en="Books">Kitaplar</a><a href="#loop">The Loop</a><a href="#exhibition">Exhibition</a><a href="#about">About</a></div></header>
+<main id="home" class="wrap">
+<section class="hero"><div class="eyebrow" data-tr="Yazar · Üretici · Kurucu" data-en="Author · Creator · Builder">Yazar · Üretici · Kurucu</div><h1>The<br><span>Chronology.</span></h1><div class="hero-grid"><div><p class="lead" data-tr="Fikirler, hikâyeler ve projeler. Gerçeklik, kimlik ve insan yaşamı üzerine, dönemden döneme uzanan bir yolculuk." data-en="Ideas, stories and projects about reality, identity and human life. A journey unfolding from one era to the next.">Fikirler, hikâyeler ve projeler. Gerçeklik, kimlik ve insan yaşamı üzerine, dönemden döneme uzanan bir yolculuk.</p><a class="arrow-link" href="#chronology" data-tr="Zaman çizelgesini keşfet ↓" data-en="Explore the chronology ↓">Zaman çizelgesini keşfet ↓</a></div><aside class="hero-aside"><span class="eyebrow" data-tr="İçinde bulunduğumuz dönem / 06" data-en="The current chapter / 06">İçinde bulunduğumuz dönem / 06</span><strong>The Simulation Era</strong><span class="small" data-tr="21 Eylül 2026 — Devam ediyor" data-en="September 21, 2026 — Ongoing">21 Eylül 2026 — Devam ediyor</span></aside></div><div class="era-index" id="era-index"></div></section>
+<section class="section" id="chronology"><div class="section-head"><div><div class="eyebrow">01 / The Chronology</div><h2 data-tr="Bir hayat. Altı dönem." data-en="One life. Six eras.">Bir hayat. Altı dönem.</h2></div><p class="small" data-tr="1 Kasım 2024'ten bugüne.<br>Her dönem, yolculuğun yeni bir bölümü." data-en="From November 1, 2024 to today.<br>Each era, a new chapter in the journey.">1 Kasım 2024'ten bugüne.<br>Her dönem, yolculuğun yeni bir bölümü.</p></div><div class="timeline" id="timeline"></div></section>
+<section class="section" id="books"><div class="section-head"><div><div class="eyebrow" data-tr="02 / Kitaplar" data-en="02 / Books">02 / Kitaplar</div><h2 data-tr="Yolculuğun sayfaları." data-en="Pages of the journey.">Yolculuğun sayfaları.</h2></div></div><div class="book-feature"><div><div class="book-art"><img id="official-cover" src="orbit-tr.webp" alt="Orbit’ten Çıkış — Cumhur Cay" style="width:100%;max-width:310px;height:auto;box-shadow:0 15px 35px #0002"></div></div><div class="book-content"><span class="pill" data-tr="Yayında" data-en="Published">Yayında</span><h3>Orbit’ten Çıkış<br><span style="color:#90999f">Exit The Orbit</span></h3><p data-tr="The Orbit döneminin kitabı. The Chronology'nin yayınlanmış ilk durağı." data-en="The book of The Orbit era. The first published chapter of The Chronology.">The Orbit döneminin kitabı. The Chronology'nin yayınlanmış ilk durağı.</p><p class="small" data-tr="Dijital kitap · PDF · Türkçe ve İngilizce" data-en="Digital book · PDF · Turkish and English">Dijital kitap · PDF · Türkçe ve İngilizce</p><div style="display:flex;flex-wrap:wrap;gap:24px"><a class="arrow-link" target="_blank" rel="noopener noreferrer" href="https://www.etsy.com/listing/4585707809/orbitten-ck-bir-kendine-donu-yolculuu" data-tr="Türkçe kitabı satın al ↗" data-en="Buy the Turkish edition ↗">Türkçe kitabı satın al ↗</a><a class="arrow-link" target="_blank" rel="noopener noreferrer" href="https://www.etsy.com/listing/4585699797/exit-the-orbit-a-journey-back-to" data-tr="İngilizce kitabı satın al ↗" data-en="Buy the English edition ↗">İngilizce kitabı satın al ↗</a></div><a class="arrow-link" href="#chronology" data-tr="Diğer dönem kitapları · Coming Soon ↗" data-en="Books from the next eras · Coming Soon ↗">Diğer dönem kitapları · Coming Soon ↗</a></div></div></section>
+<section class="section" id="loop"><div class="split"><div><div class="eyebrow">03 / The Loop</div><h2 data-tr="Hayatına bir bütün<br>olarak bak." data-en="See your life<br>as a whole.">Hayatına bir bütün<br>olarak bak.</h2><p class="lead" data-tr="Bir yaşam işletim sistemi ve kişisel gerçeklik modelleme projesi. The Chronology içinde, fikirlerin bir sisteme dönüştüğü bölüm." data-en="A life operating system and personal reality modeling project. The chapter of The Chronology where ideas take the shape of a system.">Bir yaşam işletim sistemi ve kişisel gerçeklik modelleme projesi. The Chronology içinde, fikirlerin bir sisteme dönüştüğü bölüm.</p><a class="arrow-link" href="#era-2" data-tr="The Loop dönemine git ↗" data-en="Visit The Loop era ↗">The Loop dönemine git ↗</a></div><div class="loop-visual" aria-hidden="true"><div class="loop-symbol"></div></div></div></section>
+<section class="section" id="exhibition"><div class="section-head"><div><div class="eyebrow">04 / Exhibition</div><h2 data-tr="Fikirden forma." data-en="From idea to form.">Fikirden forma.</h2></div><p class="small" data-tr="Kitaplar, sistemler ve yeni olasılıklar.<br>Cumhur Cay'ın üretim dünyası." data-en="Books, systems and new possibilities.<br>The creative world of Cumhur Cay.">Kitaplar, sistemler ve yeni olasılıklar.<br>Cumhur Cay'ın üretim dünyası.</p></div><div class="gallery"><article><span class="number">EXHIBIT / 001</span><h3>Exit The Orbit</h3><p data-tr="Yayınlanmış kitap · The Orbit" data-en="Published book · The Orbit">Yayınlanmış kitap · The Orbit</p><a class="arrow-link" href="#books" data-tr="Kitabı keşfet ↗" data-en="Explore the book ↗">Kitabı keşfet ↗</a></article><article><span class="number">EXHIBIT / 002</span><h3>The Loop</h3><p data-tr="Yaşam işletim sistemi · Proje" data-en="Life operating system · Project">Yaşam işletim sistemi · Proje</p><a class="arrow-link" href="#loop" data-tr="Projeyi keşfet ↗" data-en="Explore the project ↗">Projeyi keşfet ↗</a></article><article><span class="number">EXHIBIT / 003</span><h3>The next chapters</h3><p data-tr="The Build'den The Simulation Era'ya, gelecek dönem kitapları." data-en="From The Build to The Simulation Era: books from the next chapters.">The Build'den The Simulation Era'ya, gelecek dönem kitapları.</p><span class="pill">Coming Soon</span></article></div></section>
+<section class="section about" id="about"><div class="split"><div><div class="eyebrow">05 / About</div><h2>Cumhur Cay.</h2><p class="identity" data-tr="Birbirine bağlanan<br>fikirler ve dönemler." data-en="Connected ideas.<br>Connected eras.">Birbirine bağlanan<br>fikirler ve dönemler.</p></div><div><p data-tr="Gerçeklik, kimlik ve insan yaşamı üzerine fikirler, hikâyeler ve projeler üretiyorum. Bu site, kitaplarımı ve The Loop projesini aynı zaman çizelgesinde bir araya getiriyor." data-en="I create ideas, stories and projects about reality, identity and human life. This website brings my books and The Loop project together in one chronology.">Gerçeklik, kimlik ve insan yaşamı üzerine fikirler, hikâyeler ve projeler üretiyorum. Bu site, kitaplarımı ve The Loop projesini aynı zaman çizelgesinde bir araya getiriyor.</p><details id="journal"><summary>Journal</summary><p data-tr="Mevcut sitedeki Journal menüsü korunuyor. Yazılar ve mevcut arşiv doğrulandığında bu alana bağlanabilir." data-en="The existing Journal entry is retained. Verified articles and the current archive can be connected here.">Mevcut sitedeki Journal menüsü korunuyor. Yazılar ve mevcut arşiv doğrulandığında bu alana bağlanabilir.</p></details><details id="contact"><summary data-tr="İletişim / Contact" data-en="Contact">İletişim / Contact</summary><p data-tr="Mevcut iletişim adresleri doğrulandıktan sonra burada gösterilecek." data-en="Existing contact addresses will appear here once verified.">Mevcut iletişim adresleri doğrulandıktan sonra burada gösterilecek.</p></details></div></div></section>
+</main><footer><div class="wrap footer"><a class="brand" href="#home">IAMCUMHUR</a><span>CUMHUR CAY · THE CHRONOLOGY</span><a href="https://iamcumhur.com/" data-tr="Mevcut site ↗" data-en="Current website ↗">Mevcut site ↗</a></div></footer>
+<script>
+const eras=[
+['The Orbit','2024-11-01','2025-05-01','Yörüngeden çıkış. Yolculuğun ilk dönemi.','Exit the orbit. The opening chapter of the journey.','Orbit’ten Çıkış / Exit The Orbit'],
+['The Build','2025-05-01','2025-07-21','İnşa dönemi. Bir sonraki bölüme uzanan adımlar.','The building chapter. Steps toward the next era.','The Build'],
+['The Loop','2025-07-21','2026-03-01','Döngü dönemi. Fikirlerin bir araya geldiği bölüm.','The loop chapter. A place for ideas to come together.','The Loop'],
+['The Fly Era','2026-03-01','2026-06-01','Uçuş dönemi. Yolculukta yeni bir ufuk.','The flight chapter. A new horizon in the journey.','The Fly Era'],
+['The Reality Era','2026-06-01','2026-09-21','Gerçeklik dönemi. Gerçekliğe açılan bölüm.','The reality chapter. A window onto reality.','The Reality Era'],
+['The Simulation Era','2026-09-21',null,'Simülasyon dönemi. Zaman çizelgesinin devam eden bölümü.','The simulation chapter. The ongoing era of the chronology.','The Simulation Era']];
+let lang='tr';const date=d=>new Intl.DateTimeFormat(lang==='tr'?'tr-TR':'en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(d+'T00:00:00Z'));
+function render(){document.documentElement.lang=lang;document.getElementById('official-cover').src=lang==='tr'?'orbit-tr.webp':'orbit-en.jpg';document.getElementById('official-cover').alt=lang==='tr'?'Orbit’ten Çıkış — Cumhur Cay':'Exit The Orbit — Cumhur Cay';document.querySelectorAll('[data-tr]').forEach(el=>el.innerHTML=el.dataset[lang]);document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===lang));document.getElementById('era-index').innerHTML=eras.map((e,i)=>`<a href="#era-${i}"><small>0${i+1} / ${e[1].slice(0,4)}</small>${e[0]}</a>`).join('');document.getElementById('timeline').innerHTML=eras.map((e,i)=>`<article id="era-${i}" class="era ${i===5?'current':''}"><div class="date"><b>CHAPTER / 0${i+1}</b><time datetime="${e[1]}">${date(e[1])}</time><br>— ${e[2]?`<time datetime="${e[2]}">${date(e[2])}</time>`:lang==='tr'?'Devam ediyor':'Ongoing'}</div><div><h3>${e[0]}</h3><p>${e[lang==='tr'?3:4]}</p>${i===0?`<a class="arrow-link" href="#books">${lang==='tr'?'Kitabı keşfet':'Explore the book'} ↗</a>`:''}</div><div class="book-status"><span class="pill">${i===0?(lang==='tr'?'Yayında':'Published'):'Coming Soon'}</span><strong>${e[5]}</strong>${i>0?`<span class="small">${lang==='tr'?'Dönem kitabı':'Era book'}</span>`:''}</div></article>`).join('')}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;render()}));render();
+</script></body></html>
